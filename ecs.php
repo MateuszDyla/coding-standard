@@ -10,7 +10,6 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 use Symplify\EasyCodingStandard\ValueObject\Option;
 
 return static function (ContainerConfigurator $containerConfigurator): void {
-    $containerConfigurator->import('vendor/sylius-labs/coding-standard/ecs.php');
     $services = $containerConfigurator->services();
     $services->set(ArraySyntaxFixer::class)
         ->call('configure', [[
