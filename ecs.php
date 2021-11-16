@@ -395,15 +395,5 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $services->set(FinalClassInEntitiesOrRepositoriesFixer::class);
   
     $services->set(AboveTwoArgumentsMultilineFixer::class);
-
-    $parameters = $containerConfigurator->parameters();
-
-    $parameters->set('skip', [VisibilityRequiredFixer::class => ['*Spec.php']]);
-    
-    $parameters->set(Option::PATHS, [
-        __DIR__ . '/src',
-        __DIR__ . '/tests',
-    ]);
-    
 };
 
