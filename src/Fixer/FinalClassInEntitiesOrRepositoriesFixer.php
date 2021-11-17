@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BitBag\CodingStandards\Fixer;
+namespace BitBag\CodingStandard\Fixer;
 
 use PhpCsFixer\Fixer\FixerInterface;
 use PhpCsFixer\FixerDefinition\CodeSample;
