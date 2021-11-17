@@ -1,6 +1,6 @@
 
 
-# BitBag Coding Standards
+# BitBag Coding Standard
 
 ----
 
@@ -18,7 +18,7 @@ Like what we do? Want to join us? Check out our job listings on our [career page
 
 * [Overview](#overview)
 * [Support](#we-are-here-to-help)
-* [Installation](#installation-without-packagist)
+* [Installation](#installation)
     * [Usage](#usage)
     * [Customization](#customization)
 * [About us](#about-us)
@@ -30,8 +30,8 @@ Like what we do? Want to join us? Check out our job listings on our [career page
 # Overview
 
 ----
-[BitBag](https://bitbag.io/) coding standards helps you produce solid and maintainable code.
-At [BitBag Coding Bible](https://github.com/BitBagCommerce/BitBagBible) you can get familiar with standards we have 
+[BitBag](https://bitbag.io/) coding standard helps you produce solid and maintainable code.
+At [BitBag Coding Bible](https://github.com/BitBagCommerce/BitBagBible) you can get familiar with standard we have 
 implemented in our library. [ECS](https://github.com/symplify/easy-coding-standard)
 and [PHPStan](https://github.com/phpstan/phpstan) are responsible for keeping your code in order.
 
@@ -49,7 +49,7 @@ This **open-source library was developed to help the community**. If you have an
 We work on stable, supported and up-to-date versions of packages. We recommend you to do the same.
 
 
-Add repository to your `composer.json`
+Add repository and require-dev to your `composer.json`
 
 ```json
 "repositories": [
@@ -58,12 +58,23 @@ Add repository to your `composer.json`
     "url": "git@github.com:MateuszDyla/coding-standard.git"
   }
 ],
+"require-dev": {
+  "bitbag/coding-standards": "dev-main",
+}
+
 ```
+
+Install package with composer  
+
+```json
+composer update
+```
+
 
 Add import line to your `ecs.php` file in root directory
 ```php
 
-$containerConfigurator->import('vendor/bitbag/coding-standards/ecs.php');
+$containerConfigurator->import('vendor/bitbag/coding-standard/ecs.php');
 ```
 
 
@@ -73,7 +84,7 @@ Just like with standard ECS, for example to check /src dir:
 ```bash
 vendor/bin/ecs check src
 ```
-If ecs found any standards violations, you can fix it by:
+If ECS found any standard violations, you can fix it by:
 ```bash
 vendor/bin/ecs check src --fix
 ```
@@ -91,8 +102,8 @@ $services->set(FooBarFixer::class);
 #### PHPStan
 You can set PHPStan rule level with following commands
 ```bash
-./vendor/bin/phpstan analyze --configuration=vendor/bitbag/coding-standards/phpstan.neon src --level=8
-./vendor/bin/phpstan analyze --configuration=vendor/bitbag/coding-standards/phpstan.neon tests --level=5
+./vendor/bin/phpstan analyze --configuration=vendor/bitbag/coding-standard/phpstan.neon src --level=8
+./vendor/bin/phpstan analyze --configuration=vendor/bitbag/coding-standard/phpstan.neon tests --level=5
 ```
 
 
