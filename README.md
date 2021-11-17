@@ -74,7 +74,16 @@ composer update
 Add import line to your `ecs.php` file in root directory
 ```php
 
-$containerConfigurator->import('vendor/bitbag/coding-standard/ecs.php');
+<?php
+
+declare(strict_types=1);
+
+use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+
+return static function (ContainerConfigurator $containerConfigurator): void {
+    $containerConfigurator->import('vendor/bitbag/coding-standard/ecs.php');
+};
+
 ```
 
 
