@@ -80,6 +80,7 @@ Create `ecs.php` file with following lines or add import line to your existing f
 declare(strict_types=1);
 
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+use Symplify\EasyCodingStandard\ValueObject\Option;
 
 return static function (ContainerConfigurator $containerConfigurator): void {
     $containerConfigurator->import('vendor/bitbag/coding-standard/ecs.php');
