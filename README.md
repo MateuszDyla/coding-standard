@@ -66,7 +66,7 @@ Add repository and require-dev to your `composer.json`
 
 Install package with composer  
 
-```json
+```bash
 composer update
 ```
 
