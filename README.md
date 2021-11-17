@@ -71,7 +71,8 @@ composer update
 ```
 
 
-Add import line to your `ecs.php` file in root directory
+
+Create `ecs.php` file with following lines or add import line to your existing file if you have one
 ```php
 
 <?php
