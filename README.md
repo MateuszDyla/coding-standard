@@ -18,7 +18,7 @@ Like what we do? Want to join us? Check out our job listings on our [career page
 
 * [Overview](#overview)
 * [Support](#we-are-here-to-help)
-* [Installation](#installation)
+* [Installation without packagist](#installation-without-packagist)
     * [Usage](#usage)
     * [Customization](#customization)
 * [About us](#about-us)
