@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use BitBag\CodingStandards\Fixer\FinalClassInEntitiesOrRepositoriesFixer;
-use BitBag\CodingStandards\Fixer\AboveTwoArgumentsMultilineFixer;
+use BitBag\CodingStandard\Fixer\FinalClassInEntitiesOrRepositoriesFixer;
+use BitBag\CodingStandard\Fixer\AboveTwoArgumentsMultilineFixer;
 use PhpCsFixer\Fixer\Alias\EregToPregFixer;
 use PhpCsFixer\Fixer\Alias\NoAliasFunctionsFixer;
 use PhpCsFixer\Fixer\Alias\NoMixedEchoPrintFixer;
