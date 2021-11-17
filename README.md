@@ -113,6 +113,7 @@ It's possible to extends `root/ecs.php` by your own fixers
 use Your\Place\For\Fixer\FooBarFixer;
 ...
 return static function (ContainerConfigurator $containerConfigurator): void {
+$services = $containerConfigurator->services();
 $services->set(FooBarFixer::class);
 ```
 
