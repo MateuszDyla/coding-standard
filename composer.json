@@ -1,7 +1,7 @@
 {
-    "name": "bitbag/coding-standards",
-    "keywords": ["bitbag", "coding-standards"],
-    "description": "BitBag coding standards",
+    "name": "bitbag/coding-standard",
+    "keywords": ["bitbag", "coding-standard"],
+    "description": "BitBag coding standard",
     "license": "MIT",
     "require": {
         "php": "^7.3 || ^7.4 || ^8.0"
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "BitBag\\CodingStandards\\": "src/"
+            "BitBag\\CodingStandard\\": "src/"
         }
     }
 }
